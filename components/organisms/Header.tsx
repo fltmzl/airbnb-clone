@@ -7,7 +7,7 @@ export default function Header() {
     <header className="sticky z-50 grid grid-cols-3 bg-white p-5 shadow-md md:px-10">
       {/* left */}
       <div className="items-cente relative flex h-10">
-        <Image src="https://links.papareact.com/qd3" layout="fill" objectFit="contain" objectPosition="left" />
+        <Image src="https://links.papareact.com/qd3" layout="fill" objectFit="contain" objectPosition="left" alt="brand-logo-image" />
       </div>
 
       {/* middle searchbar */}

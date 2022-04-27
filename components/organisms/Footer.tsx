@@ -27,14 +27,14 @@ export default function Footer() {
       {/* footer section */}
       <Container className="divide-y-2 divide-gray-200 pt-10 xl:grid xl:grid-cols-4 xl:divide-y-0">
         {footerData?.map((item, index) => (
-          <section className="py-5 pr-3">
+          <section key={index} className="py-5 pr-3">
             {/* footer title item*/}
             <h4 className="mb-4 text-sm font-semibold">{item.title}</h4>
 
             <ul className="grid space-y-4 md:grid-cols-3 md:gap-2 md:space-y-0 xl:block xl:space-y-4">
               {/* footer sub title*/}
               {item.items.map((item, index) => (
-                <li className="text-sm">
+                <li key={index} className="text-sm">
                   <Link href="#">
                     <a className="underline-offset-2 hover:underline">{item}</a>
                   </Link>
